@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-family: var(--primary-font);
+}
+
+:root {
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --primary-gradient: linear-gradient(to right, #1a2e35 55%, #1cbbb4 55%);
+  --secondary-gradient: linear-gradient(to bottom, #1a2e35 55%, #1cbbb4 55%);
+  --bg-color: #1a2e35;
+}
+
+body {
+  width: 100%;
+  font-family: var(--secondary-font);
+}
+
+/* HEADER Styles */
+
+header {
+  width: 100%;
+  background: var(--secondary-gradient);
+  height: 150vh;
+  position: relative;
+}
+
+nav {
+  color: #fff;
+}
+
+nav .nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav .logo a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  gap: 0.5rem;
+}
+
+nav .logo img {
+  width: 35px;
+}
+
+nav ul {
+  position: absolute;
+  /* top: 0; */
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin-top: 8px;
+}
+
+nav ul.show {
+  display: flex;
+  transition: all 0.5s ease-in;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 1.2rem;
+}
