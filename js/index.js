@@ -1,7 +1,7 @@
 const menu = document.querySelector("#menu");
 
 menu.addEventListener("click", function () {
-  const ul = document.querySelector("#nav-links");
-  ul.classList.toggle("show");
+  const navUl = document.querySelector("#nav-ul");
+  navUl.classList.toggle("show-ul");
   menu.classList.toggle("active");
 });
