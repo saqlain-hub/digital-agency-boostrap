@@ -1,0 +1,85 @@
+@media (min-width: 768px) {
+  .hero-section {
+    display: flex;
+  }
+  .hero-section .right {
+    flex: 1;
+  }
+  .hero-section .left {
+    flex: 1;
+  }
+
+  .section-one {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+  .section-one .left {
+    flex: 1;
+  }
+  .section-one .right {
+    flex: 1;
+  }
+
+  .section-two-flex {
+    justify-content: space-around;
+  }
+  .section-four {
+    display: flex;
+    align-items: center;
+  }
+  .section-four .left {
+    flex: 1;
+  }
+  .section-four .right {
+    flex: 2;
+  }
+
+  .section-four .freelancer-work .desc p:nth-of-type(even) {
+    font-size: 1.2rem;
+  }
+  .section-five {
+    width: 100%;
+  }
+  .section-five .testimonial {
+    width: 70%;
+  }
+
+  footer .f-section-one {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin: 0;
+  }
+
+  .f-section-two {
+    padding: 0;
+  }
+  .f-section-two .cta {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+  }
+
+  .cta-one {
+    flex: 1;
+    margin: 0;
+    padding-left: 1rem;
+  }
+  .cta-two {
+    flex: 1;
+    padding: 0;
+  }
+  .cta-three {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .cta-four {
+    flex: 1;
+    padding: 0 3rem;
+  }
+}
